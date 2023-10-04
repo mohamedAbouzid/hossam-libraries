@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>حسام</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/elzero.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Google Fonts -->
@@ -14,58 +15,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body dir="rtl">
     <!-- Start Header -->
     <div class="header" id="header">
       <div class="container">
+        <a href="#" class="logo">الفهرس الإلكتروني</a>
         <ul class="main-nav">
-          <li><a href="#articles">موضوع 1</a></li>
-          <li><a href="#gallery">موضوع 2</a></li>
-          <li><a href="#features">موضوع 3</a></li>
-          <!-- <li>
-            <a href="#">Other Links</a>
-            <div class="mega-menu">
-              <div class="image">
-                <img src="imgs/megamenu.png" alt="" />
-              </div>
-              <ul class="links">
-                <li>
-                  <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
-                </li>
-                <li>
-                  <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
-                </li>
-                <li>
-                  <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
-                </li>
-                <li>
-                  <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
-                </li>
-                <li>
-                  <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
-                </li>
-              </ul>
-              <ul class="links">
-                <li>
-                  <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
-                </li>
-                <li>
-                  <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
-                </li>
-                <li>
-                  <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
-                </li>
-                <li>
-                  <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
-                </li>
-                <li>
-                  <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
+          <li><a href="#our-skills">عن الباحث</a></li>
+          <li><a href="#services">عن الدورة</a></li>
+          <li><a href="#features">الإشراف</a></li>
         </ul>
-        <a href="#" class="logo">اللوجو</a>
       </div>
     </div>
     <!-- End Header -->
@@ -73,11 +32,15 @@
     <div class="landing">
       <div class="container">
         <div class="text">
-          <h1>Welcome, مرحبًا بكم</h1>
-          <p>أهلا بكم طلاب تكنولويا التعليم</p>
+          <h1>مرحبًا بكم <span class="main-colored">Welcome</span></h1>
+          <p>أهلا بكم طلاب تكنولوجيا التعليم</p>
+          <div class="mt-4">
+            <a class="btn btn-primary" href="#">إضغط للدخول</a>
+          </div>
         </div>
         <div class="image">
-          <img src="imgs/landing-image.png" alt="" />
+          <img src="./images/header.jpg" style="-webkit-mask-box-image: url(./images/border-svg.svg) 30 repeat;
+          mask-border: url(./images/border-svg.svg) 30 repeat;" alt="" />
         </div>
       </div>
       <a href="#articles" class="go-down">
@@ -85,6 +48,118 @@
       </a>
     </div>
     <!-- End Landing -->
+
+    <!-- Start Skills -->
+    <div class="our-skills" id="our-skills">
+      <h2 class="main-title">عن الباحث</h2>
+      <div class="container">
+        <img src="imgs/skills.png" alt="" />
+        <div class="skills">
+          <div class="skill">
+            <h3>HTML <span>80%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>CSS <span>85%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="85%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript <span>70%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="70%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Python <span>80%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+
+    <!-- Start Services -->
+    <div class="services" id="services">
+      <h2 class="main-title">عن الدورة</h2>
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-user-shield fa-4x"></i>
+          <h3>Security</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-tools fa-4x"></i>
+          <h3>Fixing Issues</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-map-marked-alt fa-4x"></i>
+          <h3>Location</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-laptop-code fa-4x"></i>
+          <h3>Coding</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-palette fa-4x"></i>
+          <h3>Security</h3>
+          <div class="info">
+            <a href="#">Design</a>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn fa-4x"></i>
+          <h3>Marketing</h3>
+          <div class="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Start Features -->
+    <div class="features" id="features">
+      <h2 class="main-title">الإشراف</h2>
+      <div class="container">
+        <div class="box quality">
+          <div class="img-holder"><img src="imgs/features-01.jpg" alt="" /></div>
+          <h2>Quality</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+          <a href="#">More</a>
+        </div>
+        <div class="box time">
+          <div class="img-holder"><img src="imgs/features-02.jpg" alt="" /></div>
+          <h2>Time</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+          <a href="#">More</a>
+        </div>
+        <div class="box passion">
+          <div class="img-holder"><img src="imgs/features-03.jpg" alt="" /></div>
+          <h2>Passion</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+
     <!-- Start Articles -->
     <div class="articles" id="articles">
       <h2 class="main-title">Articles</h2>
@@ -218,31 +293,6 @@
       </div>
     </div>
     <!-- End Gallery -->
-    <!-- Start Features -->
-    <div class="features" id="features">
-      <h2 class="main-title">Features</h2>
-      <div class="container">
-        <div class="box quality">
-          <div class="img-holder"><img src="imgs/features-01.jpg" alt="" /></div>
-          <h2>Quality</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-          <a href="#">More</a>
-        </div>
-        <div class="box time">
-          <div class="img-holder"><img src="imgs/features-02.jpg" alt="" /></div>
-          <h2>Time</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-          <a href="#">More</a>
-        </div>
-        <div class="box passion">
-          <div class="img-holder"><img src="imgs/features-03.jpg" alt="" /></div>
-          <h2>Passion</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-          <a href="#">More</a>
-        </div>
-      </div>
-    </div>
-    <!-- End Features -->
     <!-- Start Testimonials -->
     <div class="testimonials" id="testimonials">
       <h2 class="main-title">Testimonials</h2>
@@ -538,89 +588,8 @@
     </div>
     <div class="spikes"></div>
     <!-- End Team -->
-    <!-- Start Services -->
-    <div class="services" id="services">
-      <h2 class="main-title">Services</h2>
-      <div class="container">
-        <div class="box">
-          <i class="fas fa-user-shield fa-4x"></i>
-          <h3>Security</h3>
-          <div class="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-tools fa-4x"></i>
-          <h3>Fixing Issues</h3>
-          <div class="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-map-marked-alt fa-4x"></i>
-          <h3>Location</h3>
-          <div class="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-laptop-code fa-4x"></i>
-          <h3>Coding</h3>
-          <div class="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-palette fa-4x"></i>
-          <h3>Security</h3>
-          <div class="info">
-            <a href="#">Design</a>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-bullhorn fa-4x"></i>
-          <h3>Marketing</h3>
-          <div class="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Services -->
-    <!-- Start Skills -->
-    <div class="our-skills" id="our-skills">
-      <h2 class="main-title">Our Skills</h2>
-      <div class="container">
-        <img src="imgs/skills.png" alt="" />
-        <div class="skills">
-          <div class="skill">
-            <h3>HTML <span>80%</span></h3>
-            <div class="the-progress">
-              <span style="width: 0" data-width="80%"></span>
-            </div>
-          </div>
-          <div class="skill">
-            <h3>CSS <span>85%</span></h3>
-            <div class="the-progress">
-              <span style="width: 0" data-width="85%"></span>
-            </div>
-          </div>
-          <div class="skill">
-            <h3>JavaScript <span>70%</span></h3>
-            <div class="the-progress">
-              <span style="width: 0" data-width="70%"></span>
-            </div>
-          </div>
-          <div class="skill">
-            <h3>Python <span>80%</span></h3>
-            <div class="the-progress">
-              <span style="width: 0" data-width="80%"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Skills -->
+    
+
     <!-- Start Work Steps -->
     <div class="work-steps" id="work-steps">
       <h2 class="main-title">How It Works ?</h2>
@@ -906,6 +875,8 @@
       <p class="copyright">Made With &lt;3 By Abouzaid</p>
     </div>
     <!-- End Footer -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
